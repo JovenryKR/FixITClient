@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Yellow"
+    tools:context=".authPhone.Final">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="178dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/Orange"
+        android:drawableEnd="@drawable/ic_next"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:stateListAnimator="@null"
+        android:text="done!"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout4"
+        app:layout_constraintVertical_bias="0.09"
+        tools:ignore="HardcodedText,SpUsage"
+        tools:targetApi="lollipop" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/Orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.445">
+
+
+        <ImageView
+            android:id="@+id/img_username"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/contentdescription"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_namebt" />
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/img_username"
+            android:background="@color/White"
+            android:cursorVisible="true"
+            android:fontFamily="@font/poppins_bold"
+            android:hint="Name"
+            android:importantForAutofill="no"
+            android:inputType="textVisiblePassword"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/LightColor"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,SpUsage,TextFields" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/Orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486">
+
+        <ImageView
+            android:id="@+id/img_password"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/contentdescription"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_user" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="302dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/img_password"
+            android:background="@color/White"
+            android:cursorVisible="true"
+            android:digits="abcdefghijklmnopqrstuvwxyz1234567890._"
+            android:fontFamily="@font/poppins_bold"
+            android:hint="Username"
+            android:importantForAutofill="no"
+            android:inputType="textFilter|textVisiblePassword"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/LightColor"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,SpUsage" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        tools:ignore="SpUsage" />
+
+    <ProgressBar
+        android:id="@+id/progressBar5"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateOnly="true"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="316dp"
+        android:layout_height="104dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Almost."
+        android:textColor="@color/Black"
+        android:textSize="72sp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout9"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints,SpUsage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

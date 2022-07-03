@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "251376981409",
+    "firebase_url": "https://alpha-database-fixit-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "alpha-database-fixit",
+    "storage_bucket": "alpha-database-fixit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251376981409:android:3c86687a16780715b867e0",
+        "android_client_info": {
+          "package_name": "com.thesis.ClientApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251376981409-87u0l5pg52hpovdj6hp0lbhlcdgq8poe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi7y3f8Rp3QLww5IDIfA11PgGwx8FAdfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251376981409-87u0l5pg52hpovdj6hp0lbhlcdgq8poe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251376981409:android:a1044aa23b3af69fb867e0",
+        "android_client_info": {
+          "package_name": "com.thesis.fixit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251376981409-87u0l5pg52hpovdj6hp0lbhlcdgq8poe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi7y3f8Rp3QLww5IDIfA11PgGwx8FAdfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251376981409-87u0l5pg52hpovdj6hp0lbhlcdgq8poe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251376981409:android:384c77613593592cb867e0",
+        "android_client_info": {
+          "package_name": "com.thesis.fixitadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251376981409-87u0l5pg52hpovdj6hp0lbhlcdgq8poe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi7y3f8Rp3QLww5IDIfA11PgGwx8FAdfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251376981409-87u0l5pg52hpovdj6hp0lbhlcdgq8poe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

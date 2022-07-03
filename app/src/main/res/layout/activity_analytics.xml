@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Green"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="Statistics"
+            android:textColor="#fff"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="20dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="103dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/emergency1"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shadow"
+            android:elevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:background="@color/LGray"
+                android:backgroundTint="@color/LGray"
+                app:layout_constraintEnd_toStartOf="@+id/emergency"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/emergency_text"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/emergency_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Emergency"
+                android:textColor="@color/Black"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/emergency"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/emergency"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/Black"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/electric_complaints1"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:background="@drawable/shadow"
+            android:elevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emergency1">
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:background="@color/Blue"
+                android:backgroundTint="@color/Blue"
+                app:layout_constraintEnd_toStartOf="@+id/electric_complaints"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/electric_complaints_text"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/electric_complaints_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Electric Complaints"
+                android:textColor="@color/Black"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/electric_complaints"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/electric_complaints"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/Black"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/public_incident1"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:layout_alignBottom="@+id/emergency1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shadow"
+            android:elevation="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/electric_complaints1">
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:background="@color/Cyan"
+                android:backgroundTint="@color/Cyan"
+                app:layout_constraintEnd_toStartOf="@+id/public_incident"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/public_incident_text"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/public_incident_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Public Incidents"
+                android:textColor="@color/Black"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/public_incident"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/public_incident"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/Black"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/household1"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:background="@drawable/shadow"
+            android:elevation="2dp"
+            app:layout_constraintTop_toBottomOf="@+id/public_incident1"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:background="@color/DGray"
+                android:backgroundTint="@color/DGray"
+                app:layout_constraintEnd_toStartOf="@+id/household"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/Household_text"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/Household_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Household"
+                android:textColor="@color/Black"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/household"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/household"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/Black"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/road_complaints1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/shadow"
+            android:elevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/household1">
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:background="@color/LGray"
+                android:backgroundTint="@color/Pink"
+                app:layout_constraintEnd_toStartOf="@+id/road_complaints"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/road_text"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/road_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="Road Complaints"
+                android:textColor="@color/Black"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/road_complaints"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/road_complaints"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/Black"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginBottom="307dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/road_complaints1"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
